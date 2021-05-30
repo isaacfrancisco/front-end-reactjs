@@ -4,6 +4,12 @@ import styled from "styled-components";
 const List = styled.ul`
   background: #333;
   color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+
+  li {
+    line-height: 36px;
+  }
 `;
 
 const TodoList = () => (
