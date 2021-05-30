@@ -1,6 +1,4 @@
-const light = {
+export default {
   background: "#EEE",
   color: "#333",
 };
-
-export default light;

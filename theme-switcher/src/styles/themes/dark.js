@@ -1,6 +1,4 @@
-const dark = {
+export default {
   background: "#333",
   color: "#fff",
 };
-
-export default dark;
