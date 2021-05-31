@@ -5,7 +5,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Title>Hello World</Title>
+        <Title fontSize={20}>
+          Hello World<span>texto menor</span>
+        </Title>
       </div>
     );
   }
