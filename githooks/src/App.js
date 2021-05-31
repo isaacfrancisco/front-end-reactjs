@@ -1,3 +1,17 @@
+import React, { useState } from "react";
+
 export default function App() {
-  return <h1>Hello World</h1>;
+  const [repositories, setRepositories] = useState([
+    { id: 1, name: "repo-1" },
+    { id: 2, name: "repo-2" },
+    { id: 3, name: "repo-3" },
+  ]);
+
+  return (
+    <ul>
+      {repositories.map((repo) => (
+        <li key={repo.id}>{repo.name}</li>
+      ))}
+    </ul>
+  );
 }
