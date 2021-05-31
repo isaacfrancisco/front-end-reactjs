@@ -1,8 +1,13 @@
 import React from "react";
+import Link from "next/link";
+
 import "isomorphic-fetch";
 
 const Home = ({ repositories }) => (
   <div>
+    <Link href="/blog">
+      <a>Blog</a>
+    </Link>
     {repositories.map((repo) => (
       <h1 key={repo.id}>{repo.name}</h1>
     ))}
