@@ -14,6 +14,12 @@ export default function App() {
     getRepositories();
   }, []);
 
+  useEffect(() => {
+    const filtered = repositories.filter((repo) => repo.favorite);
+
+    document.title = `Você tem ${filtered.length} favoritos`;
+  }, [repositories]);
+
   const handleFavorite = (id) => {
     const newRepositories = repositories.map((repo) => {
       return repo.id === id ? { ...repo, favorite: !repo.favorite } : repo;
