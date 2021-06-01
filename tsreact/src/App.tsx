@@ -1,13 +1,14 @@
-import React, { Component }  from 'react';
+import React from "react";
+import { Provider } from "react-redux";
 
-class App extends Component {
-  componentDidMount() {
-    console.log("aaa")
-  }
+import RepositoryList from "./components/RepositoryList";
 
-  render() {
-    return <h1>Hello World</h1>;
-  }
-}
+import store from "./store";
+
+const App = () => (
+  <Provider store={store}>
+    <RepositoryList />
+  </Provider>
+);
 
 export default App;
