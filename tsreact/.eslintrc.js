@@ -39,6 +39,7 @@ module.exports = {
         tsx: "never",
       },
     ],
+
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "import/prefer-default-export": "off",
